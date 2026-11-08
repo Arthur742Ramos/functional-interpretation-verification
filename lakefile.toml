@@ -1,0 +1,7 @@
+name = "structural-reasons"
+version = "0.1.0"
+defaultTargets = ["StructuralReasons"]
+
+[[lean_lib]]
+name = "StructuralReasons"
+

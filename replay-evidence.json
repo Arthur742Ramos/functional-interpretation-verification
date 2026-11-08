@@ -1,0 +1,2592 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-11-08T16:06:56.218586+00:00",
+  "scope": "Fresh execution of available unchanged sources and separately identified portable verifier variants. This is a replay record, not a new mathematical statement-fidelity review. Counts overlap across packages and must not be added as distinct theorem totals.",
+  "toolchain": {
+    "version": "4.28.0",
+    "platform": "Linux x86-64",
+    "commit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
+    "release_url": "https://github.com/leanprover/lean4/releases/download/v4.28.0/lean-4.28.0-linux.tar.zst",
+    "archive_bytes": 520948633,
+    "archive_sha256": "ceb3a3f844f7aebf63245e2b51c28d5b0ed38942c19f93cf3febd520302160bd",
+    "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
+    "checker_sha256": "cb6cee24e93aa1d72ad0314906c51918f7c96947e18790a0273c837c25e79025",
+    "fresh_replay_kernel": "Official Lean toolchain kernel, not a second implementation"
+  },
+  "python_version": "3.12.14",
+  "source_sha256": {
+    "EightRuleCounterexample.lean": "dcc58db502c39a44293b60a7a349212593235f7a2d9d4db3afe1346b226ef0dc",
+    "EqualitySkeleton.lean": "f097b93f6cb213f761469411f24550c9f46a030492f622bdc7edb2cfe35805ca",
+    "ImplicationSchemas.lean": "047661fe743000d624a36df7a92c55ae0fca4a34cc225d3c3ac586385eb3bc81",
+    "ProductFragment.lean": "4402af3fed5bff4fa8fa5cd0599a08f77e8e5a6862a2ad63161e103468462720",
+    "ReasonCongruence.lean": "700331e2be46bf993bf7654fc3de4bc56027ed204dd45f49cca6820ebf38f62c",
+    "ReasonQuotient.lean": "8456cd59909ac2bb99d8394898890eaa87b86133e7d38dd1e330707117a3c13f",
+    "ReducedWords.lean": "9776aead48c3d575e86090f2af1e6f6726b5a4f266e3d5e3472b8ec9f4448bb2",
+    "StructuralConfluence.lean": "3aa9304c628d7d21ebd38c111eee81b7872a3fd82c0409e025a3bb6a880b97bf",
+    "StructuralInvariant.lean": "8e8295ae01def72bc61d0800f1ec5860fbf468d1f819b7552059c4d75f71630d",
+    "StructuralNormalForms.lean": "070d6df5a2d580bf6ac1057ebbb8bf261a0e237994739dd539a28521f49220a0",
+    "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8",
+    "TypedWordBridge.lean": "c6e19d7c3ebc27f8bd6fe2764495edd095d4407a4594126239160e371cb7adbe",
+    "WordNormalisation.lean": "2493556319f2455d62e2d3d2e57173d6258e3280a772149b2a0c1ce9f72fb41d"
+  },
+  "source_manifests_sha256": {
+    "source-manifest.json": "5dbd43f7aa8523975626051652c9b9b0cf368ca62e222d74fe5570142353c6cf",
+    "candidate-source-manifest.json": "c1d01b9f4fb4af4c99854a668ca410255b271d33e7f01c3e82a706b2de8d8775"
+  },
+  "runs": [
+    {
+      "package": "structural-termination",
+      "checked_at_utc": "2026-11-08T15:58:38.285788+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": false,
+      "source_sha256": {
+        "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8"
+      },
+      "audited_declaration_count": 6,
+      "verifier": "verify.py",
+      "verifier_variant": "unchanged",
+      "verifier_sha256": "28dfc2859bff72df8af571cfb314cd33ebe57e03397a431d243a732ad510a922",
+      "private_full_receipt_sha256": "e9f3341a958901f88e243e61fcd89b2de18f1b43922b8b8bda086cdfeba0c7e3",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "StructuralReasons.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_measure_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.eight_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "implication",
+      "checked_at_utc": "2026-11-08T15:58:40.537476+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": false,
+      "source_sha256": {
+        "ImplicationSchemas.lean": "047661fe743000d624a36df7a92c55ae0fca4a34cc225d3c3ac586385eb3bc81"
+      },
+      "audited_declaration_count": 10,
+      "verifier": "verify_implication.py",
+      "verifier_variant": "unchanged",
+      "verifier_sha256": "814afef476b85b63318fd8ebabcb284f53e3d5334b3c524a05063c45a5d934f0",
+      "private_full_receipt_sha256": "53d52e204e8039300aede711e4d4345a1c42f9f386e3ca0cd8493ed6c22cb215",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "ImplicationSchemas.eval_subst": [
+          "propext"
+        ],
+        "ImplicationSchemas.eval_repeat_positive": [],
+        "ImplicationSchemas.schema_valid": [],
+        "ImplicationSchemas.sound": [
+          "propext"
+        ],
+        "ImplicationSchemas.atom_not_derivable": [
+          "propext"
+        ],
+        "ImplicationSchemas.falsity_not_derivable": [
+          "propext"
+        ],
+        "ImplicationSchemas.basis_sound": [
+          "propext"
+        ],
+        "ImplicationSchemas.basis_atom_not_derivable": [
+          "propext"
+        ],
+        "ImplicationSchemas.selected_sound": [
+          "propext"
+        ],
+        "ImplicationSchemas.selected_atom_not_derivable": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "raw-product",
+      "checked_at_utc": "2026-11-08T15:58:43.527225+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": false,
+      "source_sha256": {
+        "ProductFragment.lean": "4402af3fed5bff4fa8fa5cd0599a08f77e8e5a6862a2ad63161e103468462720"
+      },
+      "audited_declaration_count": 36,
+      "verifier": "verify_product.py",
+      "verifier_variant": "unchanged",
+      "verifier_sha256": "cbaab0d14d6252f4eb163d16abaff92a04a1b55456fd5c112478e27d00440750",
+      "private_full_receipt_sha256": "3b7b828d885351b792591abe64c33ac590523c8674283479d93680da6d3955dc",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "ProductFragment.root_size_decreases": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.step_size_decreases": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.step_wellFounded": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.Steps.single": [],
+        "ProductFragment.Steps.trans": [],
+        "ProductFragment.Steps.map": [],
+        "ProductFragment.Joinable.refl": [],
+        "ProductFragment.Joinable.symm": [],
+        "ProductFragment.Joinable.map": [],
+        "ProductFragment.eta_left_residual": [],
+        "ProductFragment.eta_right_residual": [],
+        "ProductFragment.root_step_join": [],
+        "ProductFragment.locally_confluent": [],
+        "ProductFragment.steps_size_le": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.confluent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.normal_steps_eq": [],
+        "ProductFragment.reachable_normal_unique": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.exists_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.exists_unique_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.rootTargets_sound": [
+          "propext"
+        ],
+        "ProductFragment.rootTargets_complete": [
+          "propext"
+        ],
+        "ProductFragment.successors_sound": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.successors_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.successors_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.nf_reachable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.nf_normal": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.steps_preserve_nf": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.step_equal": [],
+        "ProductFragment.steps_equal": [],
+        "ProductFragment.Joinable.trans": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.equal_joinable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.equal_iff_nf": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.decideEqual_correct": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.normalise": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.nf": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ProductFragment.decideEqual": [
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "structural-confluence",
+      "checked_at_utc": "2026-11-08T15:58:49.866450+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": false,
+      "source_sha256": {
+        "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8",
+        "ReducedWords.lean": "9776aead48c3d575e86090f2af1e6f6726b5a4f266e3d5e3472b8ec9f4448bb2",
+        "StructuralInvariant.lean": "8e8295ae01def72bc61d0800f1ec5860fbf468d1f819b7552059c4d75f71630d",
+        "StructuralNormalForms.lean": "070d6df5a2d580bf6ac1057ebbb8bf261a0e237994739dd539a28521f49220a0",
+        "StructuralConfluence.lean": "3aa9304c628d7d21ebd38c111eee81b7872a3fd82c0409e025a3bb6a880b97bf"
+      },
+      "audited_declaration_count": 79,
+      "verifier": "verify_confluence.py",
+      "verifier_variant": "unchanged",
+      "verifier_sha256": "706a991544ca241fc98cc85e1b976d4575e8e522a09cc4c6acef9d96dc12ec62",
+      "private_full_receipt_sha256": "e36e3155604aa4abba5d63f98c14809425f6dac7409af0600a7f35e4509f4a92",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "StructuralReasons.counts": [],
+        "StructuralReasons.Smaller": [],
+        "StructuralReasons.measure": [],
+        "StructuralReasons.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TripleLT": [],
+        "StructuralReasons.triple_wellFounded": [],
+        "StructuralReasons.step_measure_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.eight_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EdgeId": [],
+        "StructuralReasons.action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.root_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Steps.single": [],
+        "StructuralReasons.Steps.trans": [],
+        "StructuralReasons.Steps.sigma": [],
+        "StructuralReasons.Steps.left": [],
+        "StructuralReasons.Steps.right": [],
+        "StructuralReasons.steps_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.steps_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Normal": [],
+        "StructuralReasons.normal_steps_eq": [],
+        "StructuralReasons.exists_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_sigma_child": [],
+        "StructuralReasons.normal_left": [],
+        "StructuralReasons.normal_right": [],
+        "StructuralReasons.normal_shape": [],
+        "StructuralReasons.edgeId_heq": [],
+        "StructuralReasons.shape_pos_head": [],
+        "StructuralReasons.shape_neg_head": [],
+        "StructuralReasons.normal_shape_reduced": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_action_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_injective": [],
+        "StructuralReasons.shape_root_normal": [],
+        "StructuralReasons.shape_normal": [],
+        "StructuralReasons.normal_iff_reduced_shape": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_expansion_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_reachable_normal_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_exists_unique_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.inv": [],
+        "StructuralReasons.Words.inv_inv": [],
+        "StructuralReasons.Words.inv_ne_self": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Reduced": [],
+        "StructuralReasons.Words.reduced_nil": [],
+        "StructuralReasons.Words.reduced_tail": [],
+        "StructuralReasons.Words.push": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_nil": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_cancel": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.RWord": [],
+        "StructuralReasons.Words.prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.prepend_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Action.ext": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one": [],
+        "StructuralReasons.Words.Action.reverse": [],
+        "StructuralReasons.Words.Action.mul": [],
+        "StructuralReasons.Words.Action.reverse_one": [],
+        "StructuralReasons.Words.Action.reverse_reverse": [],
+        "StructuralReasons.Words.Action.mul_one": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_reverse": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul_self": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_assoc": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_inverse_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.letterAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.letterAction_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.empty": [],
+        "StructuralReasons.Words.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.stack_of_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "word-bridge-historical",
+      "checked_at_utc": "2026-11-08T16:02:42.523895+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": true,
+      "source_sha256": {
+        "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8",
+        "ReducedWords.lean": "9776aead48c3d575e86090f2af1e6f6726b5a4f266e3d5e3472b8ec9f4448bb2",
+        "StructuralInvariant.lean": "8e8295ae01def72bc61d0800f1ec5860fbf468d1f819b7552059c4d75f71630d",
+        "StructuralNormalForms.lean": "070d6df5a2d580bf6ac1057ebbb8bf261a0e237994739dd539a28521f49220a0",
+        "StructuralConfluence.lean": "3aa9304c628d7d21ebd38c111eee81b7872a3fd82c0409e025a3bb6a880b97bf",
+        "WordNormalisation.lean": "2493556319f2455d62e2d3d2e57173d6258e3280a772149b2a0c1ce9f72fb41d",
+        "TypedWordBridge.lean": "c6e19d7c3ebc27f8bd6fe2764495edd095d4407a4594126239160e371cb7adbe"
+      },
+      "audited_declaration_count": 139,
+      "verifier": "verify_bridge.py",
+      "verifier_variant": "historical",
+      "verifier_sha256": "297fe45a7492db22aff77563851e35afe3cc0b052e485515ad4f3714d5042e48",
+      "private_full_receipt_sha256": "772a64fba9f7f98348ac25dd581e1478b5d38f84ecb801d1e8e341915acb659a",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "StructuralReasons.Reason": [],
+        "StructuralReasons.Counts": [],
+        "StructuralReasons.counts": [],
+        "StructuralReasons.Smaller": [],
+        "StructuralReasons.measure": [],
+        "StructuralReasons.Root": [],
+        "StructuralReasons.Step": [],
+        "StructuralReasons.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TripleLT": [],
+        "StructuralReasons.triple_wellFounded": [],
+        "StructuralReasons.step_measure_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.eight_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Letter": [],
+        "StructuralReasons.Words.inv": [],
+        "StructuralReasons.Words.inv_inv": [],
+        "StructuralReasons.Words.inv_ne_self": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Reduced": [],
+        "StructuralReasons.Words.reduced_nil": [],
+        "StructuralReasons.Words.reduced_tail": [],
+        "StructuralReasons.Words.push": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_nil": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_cancel": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.RWord": [],
+        "StructuralReasons.Words.prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.prepend_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Action": [],
+        "StructuralReasons.Words.Action.ext": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one": [],
+        "StructuralReasons.Words.Action.reverse": [],
+        "StructuralReasons.Words.Action.mul": [],
+        "StructuralReasons.Words.Action.reverse_one": [],
+        "StructuralReasons.Words.Action.reverse_reverse": [],
+        "StructuralReasons.Words.Action.mul_one": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_reverse": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul_self": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_assoc": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_inverse_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.letterAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.letterAction_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.empty": [],
+        "StructuralReasons.Words.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.stack_of_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EdgeId": [],
+        "StructuralReasons.action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.root_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Steps": [],
+        "StructuralReasons.Steps.single": [],
+        "StructuralReasons.Steps.trans": [],
+        "StructuralReasons.Steps.sigma": [],
+        "StructuralReasons.Steps.left": [],
+        "StructuralReasons.Steps.right": [],
+        "StructuralReasons.steps_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.steps_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Normal": [],
+        "StructuralReasons.normal_steps_eq": [],
+        "StructuralReasons.exists_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_sigma_child": [],
+        "StructuralReasons.normal_left": [],
+        "StructuralReasons.normal_right": [],
+        "StructuralReasons.Shape": [],
+        "StructuralReasons.normal_shape": [],
+        "StructuralReasons.edgeId_heq": [],
+        "StructuralReasons.shape_pos_head": [],
+        "StructuralReasons.shape_neg_head": [],
+        "StructuralReasons.normal_shape_reduced": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_action_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_injective": [],
+        "StructuralReasons.shape_root_normal": [],
+        "StructuralReasons.shape_normal": [],
+        "StructuralReasons.normal_iff_reduced_shape": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_expansion_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_reachable_normal_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_exists_unique_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.inverseWord": [],
+        "StructuralReasons.Words.inverseWord_nil": [],
+        "StructuralReasons.Words.inverseWord_cons": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel": [],
+        "StructuralReasons.Words.Cancels": [],
+        "StructuralReasons.Words.Cancel.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel.length": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_terminating": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancels.single": [],
+        "StructuralReasons.Words.Cancels.trans": [],
+        "StructuralReasons.Words.Cancels.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_append": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_inverseWord": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_empty": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_iff_no_cancel": [
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_descendant_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.exists_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion": [],
+        "StructuralReasons.letterSource": [],
+        "StructuralReasons.letterTarget": [],
+        "StructuralReasons.letterSource_inv": [],
+        "StructuralReasons.letterTarget_inv": [],
+        "StructuralReasons.Walk": [],
+        "StructuralReasons.Walk.uncons": [],
+        "StructuralReasons.Walk.append": [],
+        "StructuralReasons.Walk.split": [],
+        "StructuralReasons.Walk.inverse": [
+          "propext"
+        ],
+        "StructuralReasons.Walk.cancel": [],
+        "StructuralReasons.Walk.cancels": [],
+        "StructuralReasons.Walk.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_walk": [
+          "propext"
+        ],
+        "StructuralReasons.expansion_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_eq_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_cancels_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_walk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_expansion": [
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_normal_form": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord": [],
+        "StructuralReasons.TypedWord.normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.Equiv": [],
+        "StructuralReasons.TypedWord.cancels_equiv": [],
+        "StructuralReasons.TypedWord.equiv_normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.equiv_iff_normalise_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "reason-congruence-historical",
+      "checked_at_utc": "2026-11-08T16:05:58.793608+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": true,
+      "source_sha256": {
+        "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8",
+        "ReducedWords.lean": "9776aead48c3d575e86090f2af1e6f6726b5a4f266e3d5e3472b8ec9f4448bb2",
+        "StructuralInvariant.lean": "8e8295ae01def72bc61d0800f1ec5860fbf468d1f819b7552059c4d75f71630d",
+        "StructuralNormalForms.lean": "070d6df5a2d580bf6ac1057ebbb8bf261a0e237994739dd539a28521f49220a0",
+        "StructuralConfluence.lean": "3aa9304c628d7d21ebd38c111eee81b7872a3fd82c0409e025a3bb6a880b97bf",
+        "WordNormalisation.lean": "2493556319f2455d62e2d3d2e57173d6258e3280a772149b2a0c1ce9f72fb41d",
+        "TypedWordBridge.lean": "c6e19d7c3ebc27f8bd6fe2764495edd095d4407a4594126239160e371cb7adbe",
+        "ReasonCongruence.lean": "700331e2be46bf993bf7654fc3de4bc56027ed204dd45f49cca6820ebf38f62c",
+        "EightRuleCounterexample.lean": "dcc58db502c39a44293b60a7a349212593235f7a2d9d4db3afe1346b226ef0dc",
+        "ReasonQuotient.lean": "8456cd59909ac2bb99d8394898890eaa87b86133e7d38dd1e330707117a3c13f"
+      },
+      "audited_declaration_count": 190,
+      "verifier": "verify_congruence.py",
+      "verifier_variant": "historical",
+      "verifier_sha256": "902af41e9ffabce7d50704b2ab9fe22ae67cf35acbea38417fe4d9e4260f93e5",
+      "private_full_receipt_sha256": "50457aa9f5ff4d2d3e8c90e69d344fe08db8191318b1c80ccc18fff368c01eb9",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "StructuralReasons.Reason": [],
+        "StructuralReasons.Counts": [],
+        "StructuralReasons.counts": [],
+        "StructuralReasons.Smaller": [],
+        "StructuralReasons.measure": [],
+        "StructuralReasons.Root": [],
+        "StructuralReasons.Step": [],
+        "StructuralReasons.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TripleLT": [],
+        "StructuralReasons.triple_wellFounded": [],
+        "StructuralReasons.step_measure_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.eight_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Letter": [],
+        "StructuralReasons.Words.inv": [],
+        "StructuralReasons.Words.inv_inv": [],
+        "StructuralReasons.Words.inv_ne_self": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Reduced": [],
+        "StructuralReasons.Words.reduced_nil": [],
+        "StructuralReasons.Words.reduced_tail": [],
+        "StructuralReasons.Words.push": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_nil": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_cancel": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.RWord": [],
+        "StructuralReasons.Words.prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.prepend_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Action": [],
+        "StructuralReasons.Words.Action.ext": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one": [],
+        "StructuralReasons.Words.Action.reverse": [],
+        "StructuralReasons.Words.Action.mul": [],
+        "StructuralReasons.Words.Action.reverse_one": [],
+        "StructuralReasons.Words.Action.reverse_reverse": [],
+        "StructuralReasons.Words.Action.mul_one": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_reverse": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul_self": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_assoc": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_inverse_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.letterAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.letterAction_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.empty": [],
+        "StructuralReasons.Words.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.stack_of_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EdgeId": [],
+        "StructuralReasons.action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.root_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Steps": [],
+        "StructuralReasons.Steps.single": [],
+        "StructuralReasons.Steps.trans": [],
+        "StructuralReasons.Steps.sigma": [],
+        "StructuralReasons.Steps.left": [],
+        "StructuralReasons.Steps.right": [],
+        "StructuralReasons.steps_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.steps_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Normal": [],
+        "StructuralReasons.normal_steps_eq": [],
+        "StructuralReasons.exists_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_sigma_child": [],
+        "StructuralReasons.normal_left": [],
+        "StructuralReasons.normal_right": [],
+        "StructuralReasons.Shape": [],
+        "StructuralReasons.normal_shape": [],
+        "StructuralReasons.edgeId_heq": [],
+        "StructuralReasons.shape_pos_head": [],
+        "StructuralReasons.shape_neg_head": [],
+        "StructuralReasons.normal_shape_reduced": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_action_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_injective": [],
+        "StructuralReasons.shape_root_normal": [],
+        "StructuralReasons.shape_normal": [],
+        "StructuralReasons.normal_iff_reduced_shape": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_expansion_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_reachable_normal_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_exists_unique_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.inverseWord": [],
+        "StructuralReasons.Words.inverseWord_nil": [],
+        "StructuralReasons.Words.inverseWord_cons": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel": [],
+        "StructuralReasons.Words.Cancels": [],
+        "StructuralReasons.Words.Cancel.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel.length": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_terminating": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancels.single": [],
+        "StructuralReasons.Words.Cancels.trans": [],
+        "StructuralReasons.Words.Cancels.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_append": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_inverseWord": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_empty": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_iff_no_cancel": [
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_descendant_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.exists_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion": [],
+        "StructuralReasons.letterSource": [],
+        "StructuralReasons.letterTarget": [],
+        "StructuralReasons.letterSource_inv": [],
+        "StructuralReasons.letterTarget_inv": [],
+        "StructuralReasons.Walk": [],
+        "StructuralReasons.Walk.uncons": [],
+        "StructuralReasons.Walk.append": [],
+        "StructuralReasons.Walk.split": [],
+        "StructuralReasons.Walk.inverse": [
+          "propext"
+        ],
+        "StructuralReasons.Walk.cancel": [],
+        "StructuralReasons.Walk.cancels": [],
+        "StructuralReasons.Walk.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_walk": [
+          "propext"
+        ],
+        "StructuralReasons.expansion_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_eq_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_cancels_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_walk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_expansion": [
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_normal_form": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord": [],
+        "StructuralReasons.TypedWord.normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.Equiv": [],
+        "StructuralReasons.TypedWord.cancels_equiv": [],
+        "StructuralReasons.TypedWord.equiv_normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.equiv_iff_normalise_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence": [],
+        "StructuralReasons.CompatibleEquivalence": [],
+        "StructuralReasons.ReasonCongruence.tau": [],
+        "StructuralReasons.ReasonCongruence.compatible": [],
+        "StructuralReasons.ReasonCongruence.least": [],
+        "StructuralReasons.ReasonCongruence.of_step": [],
+        "StructuralReasons.ReasonCongruence.of_steps": [],
+        "StructuralReasons.ReasonCongruence.least_steps": [],
+        "StructuralReasons.ReasonCongruence.eight_cancelSuffix": [],
+        "StructuralReasons.ReasonCongruence.eight_cancelInvSuffix": [],
+        "StructuralReasons.ReasonCongruence.root_to_eight": [],
+        "StructuralReasons.ReasonCongruence.to_eight": [],
+        "StructuralReasons.ReasonCongruence.root_to_ten": [],
+        "StructuralReasons.ReasonCongruence.to_ten": [],
+        "StructuralReasons.ReasonCongruence.eight_iff_ten": [],
+        "StructuralReasons.ReasonCongruence.eight_eq_ten": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.action_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.common_normal_of_reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.eight_of_reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.iff_reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.iff_stack_expansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.typedExpansion": [
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.iff_typed_word_equiv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EightRuleCounterexample.Vertex": [],
+        "StructuralReasons.EightRuleCounterexample.Edge": [],
+        "StructuralReasons.EightRuleCounterexample.p": [],
+        "StructuralReasons.EightRuleCounterexample.q": [],
+        "StructuralReasons.EightRuleCounterexample.peak": [],
+        "StructuralReasons.EightRuleCounterexample.longBranch": [],
+        "StructuralReasons.EightRuleCounterexample.peak_to_q": [],
+        "StructuralReasons.EightRuleCounterexample.peak_to_longBranch": [],
+        "StructuralReasons.EightRuleCounterexample.atom_normal": [],
+        "StructuralReasons.EightRuleCounterexample.inverse_atom_normal": [],
+        "StructuralReasons.EightRuleCounterexample.q_normal": [],
+        "StructuralReasons.EightRuleCounterexample.inner_normal": [],
+        "StructuralReasons.EightRuleCounterexample.longBranch_normal": [],
+        "StructuralReasons.EightRuleCounterexample.branches_distinct": [],
+        "StructuralReasons.EightRuleCounterexample.branches_not_joinable": [],
+        "StructuralReasons.EightRuleCounterexample.eight_not_confluent": [],
+        "StructuralReasons.EightRuleCounterexample.branches_congruent": [],
+        "StructuralReasons.EightRuleCounterexample.branches_same_reduced_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EightRuleCounterexample.ten_joins_peak": [],
+        "StructuralReasons.walk_has_reason": [
+          "propext"
+        ],
+        "StructuralReasons.reasonSetoid": [],
+        "StructuralReasons.wordSetoid": [],
+        "StructuralReasons.expansionOnQuotient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansionOnQuotient_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansionOnQuotient_surjective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansionOnQuotient_bijective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "word-bridge-portable",
+      "checked_at_utc": "2026-11-08T16:03:39.355013+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": true,
+      "source_sha256": {
+        "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8",
+        "ReducedWords.lean": "9776aead48c3d575e86090f2af1e6f6726b5a4f266e3d5e3472b8ec9f4448bb2",
+        "StructuralInvariant.lean": "8e8295ae01def72bc61d0800f1ec5860fbf468d1f819b7552059c4d75f71630d",
+        "StructuralNormalForms.lean": "070d6df5a2d580bf6ac1057ebbb8bf261a0e237994739dd539a28521f49220a0",
+        "StructuralConfluence.lean": "3aa9304c628d7d21ebd38c111eee81b7872a3fd82c0409e025a3bb6a880b97bf",
+        "WordNormalisation.lean": "2493556319f2455d62e2d3d2e57173d6258e3280a772149b2a0c1ce9f72fb41d",
+        "TypedWordBridge.lean": "c6e19d7c3ebc27f8bd6fe2764495edd095d4407a4594126239160e371cb7adbe"
+      },
+      "audited_declaration_count": 139,
+      "verifier": "verify_bridge.py",
+      "verifier_variant": "portable-v1",
+      "verifier_sha256": "9132c56b5c13a66ec875139ce6242fee71a16a5628cd59320b52aae46caeef66",
+      "private_full_receipt_sha256": "8351a1563682a59c05a49aa8a3fefba0ca982b8f48246b094c63927d2c5592dd",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "StructuralReasons.Reason": [],
+        "StructuralReasons.Counts": [],
+        "StructuralReasons.counts": [],
+        "StructuralReasons.Smaller": [],
+        "StructuralReasons.measure": [],
+        "StructuralReasons.Root": [],
+        "StructuralReasons.Step": [],
+        "StructuralReasons.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TripleLT": [],
+        "StructuralReasons.triple_wellFounded": [],
+        "StructuralReasons.step_measure_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.eight_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Letter": [],
+        "StructuralReasons.Words.inv": [],
+        "StructuralReasons.Words.inv_inv": [],
+        "StructuralReasons.Words.inv_ne_self": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Reduced": [],
+        "StructuralReasons.Words.reduced_nil": [],
+        "StructuralReasons.Words.reduced_tail": [],
+        "StructuralReasons.Words.push": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_nil": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_cancel": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.RWord": [],
+        "StructuralReasons.Words.prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.prepend_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Action": [],
+        "StructuralReasons.Words.Action.ext": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one": [],
+        "StructuralReasons.Words.Action.reverse": [],
+        "StructuralReasons.Words.Action.mul": [],
+        "StructuralReasons.Words.Action.reverse_one": [],
+        "StructuralReasons.Words.Action.reverse_reverse": [],
+        "StructuralReasons.Words.Action.mul_one": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_reverse": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul_self": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_assoc": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_inverse_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.letterAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.letterAction_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.empty": [],
+        "StructuralReasons.Words.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.stack_of_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EdgeId": [],
+        "StructuralReasons.action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.root_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Steps": [],
+        "StructuralReasons.Steps.single": [],
+        "StructuralReasons.Steps.trans": [],
+        "StructuralReasons.Steps.sigma": [],
+        "StructuralReasons.Steps.left": [],
+        "StructuralReasons.Steps.right": [],
+        "StructuralReasons.steps_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.steps_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Normal": [],
+        "StructuralReasons.normal_steps_eq": [],
+        "StructuralReasons.exists_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_sigma_child": [],
+        "StructuralReasons.normal_left": [],
+        "StructuralReasons.normal_right": [],
+        "StructuralReasons.Shape": [],
+        "StructuralReasons.normal_shape": [],
+        "StructuralReasons.edgeId_heq": [],
+        "StructuralReasons.shape_pos_head": [],
+        "StructuralReasons.shape_neg_head": [],
+        "StructuralReasons.normal_shape_reduced": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_action_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_injective": [],
+        "StructuralReasons.shape_root_normal": [],
+        "StructuralReasons.shape_normal": [],
+        "StructuralReasons.normal_iff_reduced_shape": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_expansion_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_reachable_normal_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_exists_unique_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.inverseWord": [],
+        "StructuralReasons.Words.inverseWord_nil": [],
+        "StructuralReasons.Words.inverseWord_cons": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel": [],
+        "StructuralReasons.Words.Cancels": [],
+        "StructuralReasons.Words.Cancel.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel.length": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_terminating": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancels.single": [],
+        "StructuralReasons.Words.Cancels.trans": [],
+        "StructuralReasons.Words.Cancels.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_append": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_inverseWord": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_empty": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_iff_no_cancel": [
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_descendant_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.exists_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion": [],
+        "StructuralReasons.letterSource": [],
+        "StructuralReasons.letterTarget": [],
+        "StructuralReasons.letterSource_inv": [],
+        "StructuralReasons.letterTarget_inv": [],
+        "StructuralReasons.Walk": [],
+        "StructuralReasons.Walk.uncons": [],
+        "StructuralReasons.Walk.append": [],
+        "StructuralReasons.Walk.split": [],
+        "StructuralReasons.Walk.inverse": [
+          "propext"
+        ],
+        "StructuralReasons.Walk.cancel": [],
+        "StructuralReasons.Walk.cancels": [],
+        "StructuralReasons.Walk.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_walk": [
+          "propext"
+        ],
+        "StructuralReasons.expansion_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_eq_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_cancels_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_walk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_expansion": [
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_normal_form": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord": [],
+        "StructuralReasons.TypedWord.normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.Equiv": [],
+        "StructuralReasons.TypedWord.cancels_equiv": [],
+        "StructuralReasons.TypedWord.equiv_normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.equiv_iff_normalise_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "reason-congruence-portable",
+      "checked_at_utc": "2026-11-08T16:06:45.202276+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": true,
+      "source_sha256": {
+        "StructuralReasons.lean": "a717705e4bc91da75233929a153ff572c39815966d6257e5443da52d5ed9a3a8",
+        "ReducedWords.lean": "9776aead48c3d575e86090f2af1e6f6726b5a4f266e3d5e3472b8ec9f4448bb2",
+        "StructuralInvariant.lean": "8e8295ae01def72bc61d0800f1ec5860fbf468d1f819b7552059c4d75f71630d",
+        "StructuralNormalForms.lean": "070d6df5a2d580bf6ac1057ebbb8bf261a0e237994739dd539a28521f49220a0",
+        "StructuralConfluence.lean": "3aa9304c628d7d21ebd38c111eee81b7872a3fd82c0409e025a3bb6a880b97bf",
+        "WordNormalisation.lean": "2493556319f2455d62e2d3d2e57173d6258e3280a772149b2a0c1ce9f72fb41d",
+        "TypedWordBridge.lean": "c6e19d7c3ebc27f8bd6fe2764495edd095d4407a4594126239160e371cb7adbe",
+        "ReasonCongruence.lean": "700331e2be46bf993bf7654fc3de4bc56027ed204dd45f49cca6820ebf38f62c",
+        "EightRuleCounterexample.lean": "dcc58db502c39a44293b60a7a349212593235f7a2d9d4db3afe1346b226ef0dc",
+        "ReasonQuotient.lean": "8456cd59909ac2bb99d8394898890eaa87b86133e7d38dd1e330707117a3c13f"
+      },
+      "audited_declaration_count": 190,
+      "verifier": "verify_congruence.py",
+      "verifier_variant": "portable-v1",
+      "verifier_sha256": "84e93c7b73c836c805a8058235898d416d71489de5b648ace4ca727229332c8d",
+      "private_full_receipt_sha256": "d486a44c28eb99c89ff7879df050d94c6e2f3c56eb6c557a3a0c2428884fd432",
+      "historical_private_path_provenance_checked": false,
+      "axioms_by_declaration": {
+        "StructuralReasons.Reason": [],
+        "StructuralReasons.Counts": [],
+        "StructuralReasons.counts": [],
+        "StructuralReasons.Smaller": [],
+        "StructuralReasons.measure": [],
+        "StructuralReasons.Root": [],
+        "StructuralReasons.Step": [],
+        "StructuralReasons.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TripleLT": [],
+        "StructuralReasons.triple_wellFounded": [],
+        "StructuralReasons.step_measure_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.eight_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Letter": [],
+        "StructuralReasons.Words.inv": [],
+        "StructuralReasons.Words.inv_inv": [],
+        "StructuralReasons.Words.inv_ne_self": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Reduced": [],
+        "StructuralReasons.Words.reduced_nil": [],
+        "StructuralReasons.Words.reduced_tail": [],
+        "StructuralReasons.Words.push": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_nil": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_cancel": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.push_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.RWord": [],
+        "StructuralReasons.Words.prepend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.prepend_inverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Action": [],
+        "StructuralReasons.Words.Action.ext": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one": [],
+        "StructuralReasons.Words.Action.reverse": [],
+        "StructuralReasons.Words.Action.mul": [],
+        "StructuralReasons.Words.Action.reverse_one": [],
+        "StructuralReasons.Words.Action.reverse_reverse": [],
+        "StructuralReasons.Words.Action.mul_one": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.one_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_reverse": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul_self": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.reverse_mul": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.mul_assoc": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.Action.cancel_inverse_suffix": [
+          "Quot.sound"
+        ],
+        "StructuralReasons.Words.letterAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.letterAction_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.empty": [],
+        "StructuralReasons.Words.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.stack_of_reduced": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EdgeId": [],
+        "StructuralReasons.action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.root_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.step_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Steps": [],
+        "StructuralReasons.Steps.single": [],
+        "StructuralReasons.Steps.trans": [],
+        "StructuralReasons.Steps.sigma": [],
+        "StructuralReasons.Steps.left": [],
+        "StructuralReasons.Steps.right": [],
+        "StructuralReasons.steps_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.steps_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Normal": [],
+        "StructuralReasons.normal_steps_eq": [],
+        "StructuralReasons.exists_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_sigma_child": [],
+        "StructuralReasons.normal_left": [],
+        "StructuralReasons.normal_right": [],
+        "StructuralReasons.Shape": [],
+        "StructuralReasons.normal_shape": [],
+        "StructuralReasons.edgeId_heq": [],
+        "StructuralReasons.shape_pos_head": [],
+        "StructuralReasons.shape_neg_head": [],
+        "StructuralReasons.normal_shape_reduced": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_action_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_injective": [],
+        "StructuralReasons.shape_root_normal": [],
+        "StructuralReasons.shape_normal": [],
+        "StructuralReasons.normal_iff_reduced_shape": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.normal_expansion_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_reachable_normal_unique": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_exists_unique_normal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.inverseWord": [],
+        "StructuralReasons.Words.inverseWord_nil": [],
+        "StructuralReasons.Words.inverseWord_cons": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel": [],
+        "StructuralReasons.Words.Cancels": [],
+        "StructuralReasons.Words.Cancel.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancel.length": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_terminating": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.Cancels.single": [],
+        "StructuralReasons.Words.Cancels.trans": [],
+        "StructuralReasons.Words.Cancels.underPrefix": [
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_append": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_inverseWord": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.wordAction_empty": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_wordAction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancel_stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_stack_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_iff_no_cancel": [
+          "propext"
+        ],
+        "StructuralReasons.Words.reduced_descendant_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.cancels_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.Words.exists_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion": [],
+        "StructuralReasons.letterSource": [],
+        "StructuralReasons.letterTarget": [],
+        "StructuralReasons.letterSource_inv": [],
+        "StructuralReasons.letterTarget_inv": [],
+        "StructuralReasons.Walk": [],
+        "StructuralReasons.Walk.uncons": [],
+        "StructuralReasons.Walk.append": [],
+        "StructuralReasons.Walk.split": [],
+        "StructuralReasons.Walk.inverse": [
+          "propext"
+        ],
+        "StructuralReasons.Walk.cancel": [],
+        "StructuralReasons.Walk.cancels": [],
+        "StructuralReasons.Walk.stack": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_walk": [
+          "propext"
+        ],
+        "StructuralReasons.expansion_action": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_eq_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_cancels_reducedExpansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.reducedExpansion_walk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansion_unique_reduced_descendant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.shape_expansion": [
+          "propext"
+        ],
+        "StructuralReasons.ten_normal_form_stack_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_normal_form": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.typed_word_confluent": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord": [],
+        "StructuralReasons.TypedWord.normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.Equiv": [],
+        "StructuralReasons.TypedWord.cancels_equiv": [],
+        "StructuralReasons.TypedWord.equiv_normalise": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.TypedWord.equiv_iff_normalise_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence": [],
+        "StructuralReasons.CompatibleEquivalence": [],
+        "StructuralReasons.ReasonCongruence.tau": [],
+        "StructuralReasons.ReasonCongruence.compatible": [],
+        "StructuralReasons.ReasonCongruence.least": [],
+        "StructuralReasons.ReasonCongruence.of_step": [],
+        "StructuralReasons.ReasonCongruence.of_steps": [],
+        "StructuralReasons.ReasonCongruence.least_steps": [],
+        "StructuralReasons.ReasonCongruence.eight_cancelSuffix": [],
+        "StructuralReasons.ReasonCongruence.eight_cancelInvSuffix": [],
+        "StructuralReasons.ReasonCongruence.root_to_eight": [],
+        "StructuralReasons.ReasonCongruence.to_eight": [],
+        "StructuralReasons.ReasonCongruence.root_to_ten": [],
+        "StructuralReasons.ReasonCongruence.to_ten": [],
+        "StructuralReasons.ReasonCongruence.eight_iff_ten": [],
+        "StructuralReasons.ReasonCongruence.eight_eq_ten": [
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.action_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.common_normal_of_reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.eight_of_reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.iff_reducedExpansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.iff_stack_expansion_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.typedExpansion": [
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.iff_typed_word_equiv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.ReasonCongruence.comparison": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EightRuleCounterexample.Vertex": [],
+        "StructuralReasons.EightRuleCounterexample.Edge": [],
+        "StructuralReasons.EightRuleCounterexample.p": [],
+        "StructuralReasons.EightRuleCounterexample.q": [],
+        "StructuralReasons.EightRuleCounterexample.peak": [],
+        "StructuralReasons.EightRuleCounterexample.longBranch": [],
+        "StructuralReasons.EightRuleCounterexample.peak_to_q": [],
+        "StructuralReasons.EightRuleCounterexample.peak_to_longBranch": [],
+        "StructuralReasons.EightRuleCounterexample.atom_normal": [],
+        "StructuralReasons.EightRuleCounterexample.inverse_atom_normal": [],
+        "StructuralReasons.EightRuleCounterexample.q_normal": [],
+        "StructuralReasons.EightRuleCounterexample.inner_normal": [],
+        "StructuralReasons.EightRuleCounterexample.longBranch_normal": [],
+        "StructuralReasons.EightRuleCounterexample.branches_distinct": [],
+        "StructuralReasons.EightRuleCounterexample.branches_not_joinable": [],
+        "StructuralReasons.EightRuleCounterexample.eight_not_confluent": [],
+        "StructuralReasons.EightRuleCounterexample.branches_congruent": [],
+        "StructuralReasons.EightRuleCounterexample.branches_same_reduced_word": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.EightRuleCounterexample.ten_joins_peak": [],
+        "StructuralReasons.walk_has_reason": [
+          "propext"
+        ],
+        "StructuralReasons.reasonSetoid": [],
+        "StructuralReasons.wordSetoid": [],
+        "StructuralReasons.expansionOnQuotient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansionOnQuotient_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansionOnQuotient_surjective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "StructuralReasons.expansionOnQuotient_bijective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "package": "raw-equality-skeleton-direct-linux",
+      "checked_at_utc": "2026-11-08T16:02:37.017901+00:00",
+      "status": "passed",
+      "warnings_as_errors": true,
+      "fresh_kernel_replay": true,
+      "source_sha256": {
+        "EqualitySkeleton.lean": "f097b93f6cb213f761469411f24550c9f46a030492f622bdc7edb2cfe35805ca"
+      },
+      "audited_declaration_count": 42,
+      "axioms_by_declaration": {
+        "EqualitySkeleton.Reason": [],
+        "EqualitySkeleton.W": [],
+        "EqualitySkeleton.Q": [],
+        "EqualitySkeleton.W_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Context": [],
+        "EqualitySkeleton.Context.fill": [],
+        "EqualitySkeleton.Context.coeff": [],
+        "EqualitySkeleton.Context.offset": [],
+        "EqualitySkeleton.Context.coeff_pos": [
+          "propext"
+        ],
+        "EqualitySkeleton.Context.weight_affine": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Context.weight_mono": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Context.weight_strict": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Context.weight_equal": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Context.secondary_strict": [
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Smaller": [],
+        "EqualitySkeleton.context_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Root": [],
+        "EqualitySkeleton.root_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Step": [],
+        "EqualitySkeleton.step_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.rank": [],
+        "EqualitySkeleton.RankLT": [],
+        "EqualitySkeleton.rank_wellFounded": [],
+        "EqualitySkeleton.step_rank_decreases": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.terminating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.no_infinite_reduction": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "EqualitySkeleton.Context.comp": [],
+        "EqualitySkeleton.Context.fill_comp": [
+          "propext"
+        ],
+        "EqualitySkeleton.Step.root": [],
+        "EqualitySkeleton.Step.context": [
+          "propext"
+        ],
+        "EqualitySkeleton.Steps": [],
+        "EqualitySkeleton.Normal": [],
+        "EqualitySkeleton.no_root_below_rho": [
+          "propext"
+        ],
+        "EqualitySkeleton.no_root_below_xi1_rho": [
+          "propext"
+        ],
+        "EqualitySkeleton.rho_normal": [
+          "propext"
+        ],
+        "EqualitySkeleton.xi1_rho_normal": [
+          "propext"
+        ],
+        "EqualitySkeleton.normal_steps_eq": [],
+        "EqualitySkeleton.peak": [],
+        "EqualitySkeleton.peak_to_rho": [],
+        "EqualitySkeleton.peak_to_xi1_rho": [],
+        "EqualitySkeleton.Confluent": [],
+        "EqualitySkeleton.not_confluent": [
+          "propext"
+        ]
+      },
+      "route": "Separate direct Linux compilation, comparison with the 42 historical expected dependency reports, and official fresh checker replay. Historical Windows verifier was neither executed nor changed.",
+      "driver_sha256": "1175e6b202ab3ecad831a74bd55e810f4ca7f807b4f794c88b90a6871524bb56",
+      "driver_distributed": false,
+      "private_full_receipt_sha256": "cfa67e5c50eb1735bf0216f20bd70b3472365883f441190ba3731e0b3c09f04e"
+    }
+  ],
+  "portable_comparison": {
+    "bridge": {
+      "source_hashes_identical": true,
+      "dependency_reports_identical": true,
+      "historical_and_portable_fresh_replay_passed": true
+    },
+    "congruence": {
+      "source_hashes_identical": true,
+      "dependency_reports_identical": true,
+      "historical_and_portable_fresh_replay_passed": true
+    }
+  },
+  "negative_checks": {
+    "portable_check_provenance_flag_rejected": true,
+    "rejection_before_tool_access_or_output_creation": true
+  },
+  "original_inputs_unchanged": true,
+  "full_private_receipts_and_logs_retained": true,
+  "exclusions": [
+    "No replay of unavailable later groupoid, global-edge, reconstruction, typed computational core, named representation, structural alpha-equivalence, substitution or binder-freshness packages.",
+    "Historical Windows equality verifier was not executed.",
+    "Historical private-path provenance was not checked.",
+    "No claim that these executions constitute new independent mathematical review."
+  ]
+}
