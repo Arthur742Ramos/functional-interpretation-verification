@@ -1,0 +1,1634 @@
+[
+  {
+    "name": "StructuralReasons.Reason",
+    "kind": "inductive",
+    "source": "StructuralReasons.lean",
+    "line": 13
+  },
+  {
+    "name": "StructuralReasons.Counts",
+    "kind": "structure",
+    "source": "StructuralReasons.lean",
+    "line": 21
+  },
+  {
+    "name": "StructuralReasons.counts",
+    "kind": "def",
+    "source": "StructuralReasons.lean",
+    "line": 27
+  },
+  {
+    "name": "StructuralReasons.Smaller",
+    "kind": "def",
+    "source": "StructuralReasons.lean",
+    "line": 39
+  },
+  {
+    "name": "StructuralReasons.measure",
+    "kind": "def",
+    "source": "StructuralReasons.lean",
+    "line": 42
+  },
+  {
+    "name": "StructuralReasons.Root",
+    "kind": "inductive",
+    "source": "StructuralReasons.lean",
+    "line": 46
+  },
+  {
+    "name": "StructuralReasons.Step",
+    "kind": "inductive",
+    "source": "StructuralReasons.lean",
+    "line": 66
+  },
+  {
+    "name": "StructuralReasons.root_decreases",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 78
+  },
+  {
+    "name": "StructuralReasons.step_decreases",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 84
+  },
+  {
+    "name": "StructuralReasons.TripleLT",
+    "kind": "def",
+    "source": "StructuralReasons.lean",
+    "line": 99
+  },
+  {
+    "name": "StructuralReasons.triple_wellFounded",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 102
+  },
+  {
+    "name": "StructuralReasons.step_measure_decreases",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 105
+  },
+  {
+    "name": "StructuralReasons.terminating",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 111
+  },
+  {
+    "name": "StructuralReasons.eight_terminating",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 118
+  },
+  {
+    "name": "StructuralReasons.ten_terminating",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 122
+  },
+  {
+    "name": "StructuralReasons.no_infinite_reduction",
+    "kind": "theorem",
+    "source": "StructuralReasons.lean",
+    "line": 127
+  },
+  {
+    "name": "StructuralReasons.Words.Letter",
+    "kind": "inductive",
+    "source": "ReducedWords.lean",
+    "line": 12
+  },
+  {
+    "name": "StructuralReasons.Words.inv",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 16
+  },
+  {
+    "name": "StructuralReasons.Words.inv_inv",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 20
+  },
+  {
+    "name": "StructuralReasons.Words.inv_ne_self",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 23
+  },
+  {
+    "name": "StructuralReasons.Words.Reduced",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 29
+  },
+  {
+    "name": "StructuralReasons.Words.reduced_nil",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 33
+  },
+  {
+    "name": "StructuralReasons.Words.reduced_tail",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 35
+  },
+  {
+    "name": "StructuralReasons.Words.push",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 38
+  },
+  {
+    "name": "StructuralReasons.Words.push_nil",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 44
+  },
+  {
+    "name": "StructuralReasons.Words.push_cancel",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 46
+  },
+  {
+    "name": "StructuralReasons.Words.push_prepend",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 51
+  },
+  {
+    "name": "StructuralReasons.Words.push_reduced",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 58
+  },
+  {
+    "name": "StructuralReasons.Words.push_inverse",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 70
+  },
+  {
+    "name": "StructuralReasons.Words.RWord",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 83
+  },
+  {
+    "name": "StructuralReasons.Words.prepend",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 85
+  },
+  {
+    "name": "StructuralReasons.Words.prepend_inverse",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 88
+  },
+  {
+    "name": "StructuralReasons.Words.Action",
+    "kind": "structure",
+    "source": "ReducedWords.lean",
+    "line": 94
+  },
+  {
+    "name": "StructuralReasons.Words.Action.ext",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 104
+  },
+  {
+    "name": "StructuralReasons.Words.Action.one",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 116
+  },
+  {
+    "name": "StructuralReasons.Words.Action.reverse",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 118
+  },
+  {
+    "name": "StructuralReasons.Words.Action.mul",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 122
+  },
+  {
+    "name": "StructuralReasons.Words.Action.reverse_one",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 128
+  },
+  {
+    "name": "StructuralReasons.Words.Action.reverse_reverse",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 129
+  },
+  {
+    "name": "StructuralReasons.Words.Action.mul_one",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 130
+  },
+  {
+    "name": "StructuralReasons.Words.Action.one_mul",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 132
+  },
+  {
+    "name": "StructuralReasons.Words.Action.mul_reverse",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 134
+  },
+  {
+    "name": "StructuralReasons.Words.Action.reverse_mul_self",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 138
+  },
+  {
+    "name": "StructuralReasons.Words.Action.reverse_mul",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 142
+  },
+  {
+    "name": "StructuralReasons.Words.Action.mul_assoc",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 146
+  },
+  {
+    "name": "StructuralReasons.Words.Action.cancel_suffix",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 149
+  },
+  {
+    "name": "StructuralReasons.Words.Action.cancel_inverse_suffix",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 151
+  },
+  {
+    "name": "StructuralReasons.Words.letterAction",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 157
+  },
+  {
+    "name": "StructuralReasons.Words.letterAction_inv",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 163
+  },
+  {
+    "name": "StructuralReasons.Words.empty",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 170
+  },
+  {
+    "name": "StructuralReasons.Words.stack",
+    "kind": "def",
+    "source": "ReducedWords.lean",
+    "line": 172
+  },
+  {
+    "name": "StructuralReasons.Words.stack_of_reduced",
+    "kind": "theorem",
+    "source": "ReducedWords.lean",
+    "line": 176
+  },
+  {
+    "name": "StructuralReasons.EdgeId",
+    "kind": "abbrev",
+    "source": "StructuralInvariant.lean",
+    "line": 14
+  },
+  {
+    "name": "StructuralReasons.action",
+    "kind": "def",
+    "source": "StructuralInvariant.lean",
+    "line": 19
+  },
+  {
+    "name": "StructuralReasons.reducedExpansion",
+    "kind": "def",
+    "source": "StructuralInvariant.lean",
+    "line": 26
+  },
+  {
+    "name": "StructuralReasons.root_action",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 30
+  },
+  {
+    "name": "StructuralReasons.step_action",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 35
+  },
+  {
+    "name": "StructuralReasons.Steps",
+    "kind": "inductive",
+    "source": "StructuralInvariant.lean",
+    "line": 44
+  },
+  {
+    "name": "StructuralReasons.Steps.single",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 53
+  },
+  {
+    "name": "StructuralReasons.Steps.trans",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 55
+  },
+  {
+    "name": "StructuralReasons.Steps.sigma",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 61
+  },
+  {
+    "name": "StructuralReasons.Steps.left",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 66
+  },
+  {
+    "name": "StructuralReasons.Steps.right",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 72
+  },
+  {
+    "name": "StructuralReasons.steps_action",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 80
+  },
+  {
+    "name": "StructuralReasons.steps_reducedExpansion",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 86
+  },
+  {
+    "name": "StructuralReasons.Normal",
+    "kind": "def",
+    "source": "StructuralInvariant.lean",
+    "line": 91
+  },
+  {
+    "name": "StructuralReasons.normal_steps_eq",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 94
+  },
+  {
+    "name": "StructuralReasons.exists_normal",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 101
+  },
+  {
+    "name": "StructuralReasons.normal_sigma_child",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 112
+  },
+  {
+    "name": "StructuralReasons.normal_left",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 117
+  },
+  {
+    "name": "StructuralReasons.normal_right",
+    "kind": "theorem",
+    "source": "StructuralInvariant.lean",
+    "line": 123
+  },
+  {
+    "name": "StructuralReasons.Shape",
+    "kind": "inductive",
+    "source": "StructuralNormalForms.lean",
+    "line": 9
+  },
+  {
+    "name": "StructuralReasons.normal_shape",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 19
+  },
+  {
+    "name": "StructuralReasons.edgeId_heq",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 49
+  },
+  {
+    "name": "StructuralReasons.shape_pos_head",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 55
+  },
+  {
+    "name": "StructuralReasons.shape_neg_head",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 64
+  },
+  {
+    "name": "StructuralReasons.normal_shape_reduced",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 73
+  },
+  {
+    "name": "StructuralReasons.shape_action_word",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 107
+  },
+  {
+    "name": "StructuralReasons.shape_injective",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 123
+  },
+  {
+    "name": "StructuralReasons.shape_root_normal",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 145
+  },
+  {
+    "name": "StructuralReasons.shape_normal",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 178
+  },
+  {
+    "name": "StructuralReasons.normal_iff_reduced_shape",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 210
+  },
+  {
+    "name": "StructuralReasons.normal_expansion_injective",
+    "kind": "theorem",
+    "source": "StructuralNormalForms.lean",
+    "line": 220
+  },
+  {
+    "name": "StructuralReasons.ten_confluent",
+    "kind": "theorem",
+    "source": "StructuralConfluence.lean",
+    "line": 13
+  },
+  {
+    "name": "StructuralReasons.ten_reachable_normal_unique",
+    "kind": "theorem",
+    "source": "StructuralConfluence.lean",
+    "line": 26
+  },
+  {
+    "name": "StructuralReasons.ten_exists_unique_normal",
+    "kind": "theorem",
+    "source": "StructuralConfluence.lean",
+    "line": 33
+  },
+  {
+    "name": "StructuralReasons.ten_normal_form_word",
+    "kind": "theorem",
+    "source": "StructuralConfluence.lean",
+    "line": 41
+  },
+  {
+    "name": "StructuralReasons.Words.inverseWord",
+    "kind": "def",
+    "source": "WordNormalisation.lean",
+    "line": 8
+  },
+  {
+    "name": "StructuralReasons.Words.inverseWord_nil",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 10
+  },
+  {
+    "name": "StructuralReasons.Words.inverseWord_cons",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 11
+  },
+  {
+    "name": "StructuralReasons.Words.Cancel",
+    "kind": "inductive",
+    "source": "WordNormalisation.lean",
+    "line": 16
+  },
+  {
+    "name": "StructuralReasons.Words.Cancels",
+    "kind": "inductive",
+    "source": "WordNormalisation.lean",
+    "line": 21
+  },
+  {
+    "name": "StructuralReasons.Words.Cancel.underPrefix",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 26
+  },
+  {
+    "name": "StructuralReasons.Words.Cancel.length",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 30
+  },
+  {
+    "name": "StructuralReasons.Words.cancel_terminating",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 35
+  },
+  {
+    "name": "StructuralReasons.Words.Cancels.single",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 42
+  },
+  {
+    "name": "StructuralReasons.Words.Cancels.trans",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 43
+  },
+  {
+    "name": "StructuralReasons.Words.Cancels.underPrefix",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 48
+  },
+  {
+    "name": "StructuralReasons.Words.cancels_stack",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 56
+  },
+  {
+    "name": "StructuralReasons.Words.wordAction",
+    "kind": "def",
+    "source": "WordNormalisation.lean",
+    "line": 76
+  },
+  {
+    "name": "StructuralReasons.Words.wordAction_append",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 80
+  },
+  {
+    "name": "StructuralReasons.Words.wordAction_inverseWord",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 86
+  },
+  {
+    "name": "StructuralReasons.Words.wordAction_empty",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 92
+  },
+  {
+    "name": "StructuralReasons.Words.cancel_wordAction",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 100
+  },
+  {
+    "name": "StructuralReasons.Words.cancel_stack",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 105
+  },
+  {
+    "name": "StructuralReasons.Words.cancels_stack_eq",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 108
+  },
+  {
+    "name": "StructuralReasons.Words.reduced_iff_no_cancel",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 114
+  },
+  {
+    "name": "StructuralReasons.Words.reduced_descendant_eq",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 134
+  },
+  {
+    "name": "StructuralReasons.Words.cancels_confluent",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 138
+  },
+  {
+    "name": "StructuralReasons.Words.exists_unique_reduced_descendant",
+    "kind": "theorem",
+    "source": "WordNormalisation.lean",
+    "line": 145
+  },
+  {
+    "name": "StructuralReasons.expansion",
+    "kind": "def",
+    "source": "TypedWordBridge.lean",
+    "line": 10
+  },
+  {
+    "name": "StructuralReasons.letterSource",
+    "kind": "def",
+    "source": "TypedWordBridge.lean",
+    "line": 17
+  },
+  {
+    "name": "StructuralReasons.letterTarget",
+    "kind": "def",
+    "source": "TypedWordBridge.lean",
+    "line": 21
+  },
+  {
+    "name": "StructuralReasons.letterSource_inv",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 25
+  },
+  {
+    "name": "StructuralReasons.letterTarget_inv",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 27
+  },
+  {
+    "name": "StructuralReasons.Walk",
+    "kind": "inductive",
+    "source": "TypedWordBridge.lean",
+    "line": 31
+  },
+  {
+    "name": "StructuralReasons.Walk.uncons",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 37
+  },
+  {
+    "name": "StructuralReasons.Walk.append",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 42
+  },
+  {
+    "name": "StructuralReasons.Walk.split",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 48
+  },
+  {
+    "name": "StructuralReasons.Walk.inverse",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 58
+  },
+  {
+    "name": "StructuralReasons.Walk.cancel",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 67
+  },
+  {
+    "name": "StructuralReasons.Walk.cancels",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 77
+  },
+  {
+    "name": "StructuralReasons.Walk.stack",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 83
+  },
+  {
+    "name": "StructuralReasons.expansion_walk",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 87
+  },
+  {
+    "name": "StructuralReasons.expansion_action",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 95
+  },
+  {
+    "name": "StructuralReasons.reducedExpansion_eq_stack_expansion",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 104
+  },
+  {
+    "name": "StructuralReasons.expansion_cancels_reducedExpansion",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 109
+  },
+  {
+    "name": "StructuralReasons.reducedExpansion_walk",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 114
+  },
+  {
+    "name": "StructuralReasons.expansion_unique_reduced_descendant",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 118
+  },
+  {
+    "name": "StructuralReasons.shape_expansion",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 127
+  },
+  {
+    "name": "StructuralReasons.ten_normal_form_stack_expansion",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 137
+  },
+  {
+    "name": "StructuralReasons.typed_word_normal_form",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 148
+  },
+  {
+    "name": "StructuralReasons.typed_word_confluent",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 155
+  },
+  {
+    "name": "StructuralReasons.TypedWord",
+    "kind": "def",
+    "source": "TypedWordBridge.lean",
+    "line": 163
+  },
+  {
+    "name": "StructuralReasons.TypedWord.normalise",
+    "kind": "def",
+    "source": "TypedWordBridge.lean",
+    "line": 169
+  },
+  {
+    "name": "StructuralReasons.TypedWord.Equiv",
+    "kind": "inductive",
+    "source": "TypedWordBridge.lean",
+    "line": 173
+  },
+  {
+    "name": "StructuralReasons.TypedWord.cancels_equiv",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 179
+  },
+  {
+    "name": "StructuralReasons.TypedWord.equiv_normalise",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 193
+  },
+  {
+    "name": "StructuralReasons.TypedWord.equiv_iff_normalise_eq",
+    "kind": "theorem",
+    "source": "TypedWordBridge.lean",
+    "line": 204
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence",
+    "kind": "inductive",
+    "source": "ReasonCongruence.lean",
+    "line": 14
+  },
+  {
+    "name": "StructuralReasons.CompatibleEquivalence",
+    "kind": "structure",
+    "source": "ReasonCongruence.lean",
+    "line": 32
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.tau",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 44
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.compatible",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 49
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.least",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 54
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.of_step",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 67
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.of_steps",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 75
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.least_steps",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 82
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.eight_cancelSuffix",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 89
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.eight_cancelInvSuffix",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 95
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.root_to_eight",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 101
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.to_eight",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 115
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.root_to_ten",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 118
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.to_ten",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 132
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.eight_iff_ten",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 135
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.eight_eq_ten",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 139
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.action_eq",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 144
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.reducedExpansion_eq",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 155
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.common_normal_of_reducedExpansion_eq",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 160
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.eight_of_reducedExpansion_eq",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 170
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.iff_reducedExpansion_eq",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 175
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.iff_stack_expansion_eq",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 185
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.typedExpansion",
+    "kind": "def",
+    "source": "ReasonCongruence.lean",
+    "line": 192
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.iff_typed_word_equiv",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 195
+  },
+  {
+    "name": "StructuralReasons.ReasonCongruence.comparison",
+    "kind": "theorem",
+    "source": "ReasonCongruence.lean",
+    "line": 201
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.Vertex",
+    "kind": "inductive",
+    "source": "EightRuleCounterexample.lean",
+    "line": 6
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.Edge",
+    "kind": "inductive",
+    "source": "EightRuleCounterexample.lean",
+    "line": 9
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.p",
+    "kind": "def",
+    "source": "EightRuleCounterexample.lean",
+    "line": 13
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.q",
+    "kind": "def",
+    "source": "EightRuleCounterexample.lean",
+    "line": 14
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.peak",
+    "kind": "def",
+    "source": "EightRuleCounterexample.lean",
+    "line": 16
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.longBranch",
+    "kind": "def",
+    "source": "EightRuleCounterexample.lean",
+    "line": 18
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.peak_to_q",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 20
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.peak_to_longBranch",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 23
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.atom_normal",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 26
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.inverse_atom_normal",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 32
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.q_normal",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 39
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.inner_normal",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 41
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.longBranch_normal",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 48
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.branches_distinct",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 57
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.branches_not_joinable",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 62
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.eight_not_confluent",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 69
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.branches_congruent",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 75
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.branches_same_reduced_word",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 78
+  },
+  {
+    "name": "StructuralReasons.EightRuleCounterexample.ten_joins_peak",
+    "kind": "theorem",
+    "source": "EightRuleCounterexample.lean",
+    "line": 83
+  },
+  {
+    "name": "StructuralReasons.walk_has_reason",
+    "kind": "theorem",
+    "source": "ReasonQuotient.lean",
+    "line": 10
+  },
+  {
+    "name": "StructuralReasons.reasonSetoid",
+    "kind": "def",
+    "source": "ReasonQuotient.lean",
+    "line": 23
+  },
+  {
+    "name": "StructuralReasons.wordSetoid",
+    "kind": "def",
+    "source": "ReasonQuotient.lean",
+    "line": 28
+  },
+  {
+    "name": "StructuralReasons.expansionOnQuotient",
+    "kind": "def",
+    "source": "ReasonQuotient.lean",
+    "line": 33
+  },
+  {
+    "name": "StructuralReasons.expansionOnQuotient_injective",
+    "kind": "theorem",
+    "source": "ReasonQuotient.lean",
+    "line": 38
+  },
+  {
+    "name": "StructuralReasons.expansionOnQuotient_surjective",
+    "kind": "theorem",
+    "source": "ReasonQuotient.lean",
+    "line": 46
+  },
+  {
+    "name": "StructuralReasons.expansionOnQuotient_bijective",
+    "kind": "theorem",
+    "source": "ReasonQuotient.lean",
+    "line": 58
+  },
+  {
+    "name": "StructuralReasons.TypedWord.identity",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 11
+  },
+  {
+    "name": "StructuralReasons.TypedWord.compose",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 13
+  },
+  {
+    "name": "StructuralReasons.TypedWord.inverse",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 16
+  },
+  {
+    "name": "StructuralReasons.TypedWord.equiv_action",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 19
+  },
+  {
+    "name": "StructuralReasons.TypedWord.equiv_of_action",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 27
+  },
+  {
+    "name": "StructuralReasons.TypedWord.compose_respects",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 34
+  },
+  {
+    "name": "StructuralReasons.TypedWord.inverse_respects",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 40
+  },
+  {
+    "name": "StructuralReasons.TypedWord.compose_assoc",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 45
+  },
+  {
+    "name": "StructuralReasons.TypedWord.identity_compose",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 50
+  },
+  {
+    "name": "StructuralReasons.TypedWord.compose_identity",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 53
+  },
+  {
+    "name": "StructuralReasons.TypedWord.compose_inverse_equiv",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 56
+  },
+  {
+    "name": "StructuralReasons.TypedWord.inverse_compose_equiv",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 61
+  },
+  {
+    "name": "StructuralReasons.PathGroupoid",
+    "kind": "structure",
+    "source": "GroupoidOperations.lean",
+    "line": 68
+  },
+  {
+    "name": "StructuralReasons.ReasonClass",
+    "kind": "abbrev",
+    "source": "GroupoidOperations.lean",
+    "line": 80
+  },
+  {
+    "name": "StructuralReasons.WordClass",
+    "kind": "abbrev",
+    "source": "GroupoidOperations.lean",
+    "line": 82
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.identity",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 86
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.compose",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 88
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.inverse",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 92
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.compose_mk",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 96
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.inverse_mk",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 100
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.assoc",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 103
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.identity_compose",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 111
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.compose_identity",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 116
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.compose_inverse",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 121
+  },
+  {
+    "name": "StructuralReasons.ReasonClass.inverse_compose",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 126
+  },
+  {
+    "name": "StructuralReasons.WordClass.identity",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 133
+  },
+  {
+    "name": "StructuralReasons.WordClass.compose",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 134
+  },
+  {
+    "name": "StructuralReasons.WordClass.inverse",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 137
+  },
+  {
+    "name": "StructuralReasons.WordClass.compose_mk",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 141
+  },
+  {
+    "name": "StructuralReasons.WordClass.inverse_mk",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 145
+  },
+  {
+    "name": "StructuralReasons.WordClass.assoc",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 148
+  },
+  {
+    "name": "StructuralReasons.WordClass.identity_compose",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 156
+  },
+  {
+    "name": "StructuralReasons.WordClass.compose_identity",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 161
+  },
+  {
+    "name": "StructuralReasons.WordClass.compose_inverse",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 166
+  },
+  {
+    "name": "StructuralReasons.WordClass.inverse_compose",
+    "kind": "theorem",
+    "source": "GroupoidOperations.lean",
+    "line": 171
+  },
+  {
+    "name": "StructuralReasons.reasonGroupoid",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 177
+  },
+  {
+    "name": "StructuralReasons.wordGroupoid",
+    "kind": "def",
+    "source": "GroupoidOperations.lean",
+    "line": 188
+  },
+  {
+    "name": "StructuralReasons.PathFunctor",
+    "kind": "structure",
+    "source": "GroupoidComparison.lean",
+    "line": 8
+  },
+  {
+    "name": "StructuralReasons.PathGroupoid.inverse_unique",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 18
+  },
+  {
+    "name": "StructuralReasons.PathGroupoid.inverse_identity",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 26
+  },
+  {
+    "name": "StructuralReasons.PathGroupoid.inverse_inverse",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 29
+  },
+  {
+    "name": "StructuralReasons.PathGroupoid.inverse_compose_eq",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 32
+  },
+  {
+    "name": "StructuralReasons.PathFunctor.map_inverse",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 46
+  },
+  {
+    "name": "StructuralReasons.ObjectFixingGroupoidIso",
+    "kind": "structure",
+    "source": "GroupoidComparison.lean",
+    "line": 53
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.expansion_identity",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 61
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.expansion_compose",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 65
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.expansion_inverse",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 72
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.expansionFunctor",
+    "kind": "def",
+    "source": "GroupoidComparison.lean",
+    "line": 77
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.reconstruction",
+    "kind": "def",
+    "source": "GroupoidComparison.lean",
+    "line": 83
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.expansion_reconstruction",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 86
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.reconstruction_expansion",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 90
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.reconstruction_identity",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 95
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.reconstruction_compose",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 100
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.reconstruction_inverse",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 106
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.reconstructionFunctor",
+    "kind": "def",
+    "source": "GroupoidComparison.lean",
+    "line": 111
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.isomorphism",
+    "kind": "def",
+    "source": "GroupoidComparison.lean",
+    "line": 118
+  },
+  {
+    "name": "StructuralReasons.GroupoidComparison.expansion_generator",
+    "kind": "theorem",
+    "source": "GroupoidComparison.lean",
+    "line": 126
+  },
+  {
+    "name": "StructuralReasons.PathFunctor.ext",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 10
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.GeneratorAssignment",
+    "kind": "abbrev",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 22
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.evaluate",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 27
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.evaluate_root",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 33
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.evaluate_congruence",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 51
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonGenerator",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 62
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordGenerator",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 65
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonMap",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 70
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonMap_identity",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 73
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonMap_compose",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 76
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonExtension",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 83
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonExtension_generator",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 88
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonFunctor_evaluate",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 92
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reasonExtension_unique",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 106
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.reason_universal",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 115
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 124
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension_expansion",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 135
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension_generator",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 142
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.precomposeExpansion",
+    "kind": "def",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 150
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension_unique",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 162
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.extension_comparison",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 174
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension_empty",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 179
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension_concatenation",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 184
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.wordExtension_reversal",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 191
+  },
+  {
+    "name": "StructuralReasons.FreeGroupoid.word_universal",
+    "kind": "theorem",
+    "source": "FreeGroupoidUniversal.lean",
+    "line": 197
+  }
+]
