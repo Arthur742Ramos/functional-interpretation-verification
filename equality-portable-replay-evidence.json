@@ -1,0 +1,135 @@
+{
+  "schema": "portable-equality-replay-v1",
+  "checked_at_utc": "2026-11-10T16:08:17.532244+00:00",
+  "procedure": "separate portable replay; historical Windows verifier not executed",
+  "source_sha256": "f097b93f6cb213f761469411f24550c9f46a030492f622bdc7edb2cfe35805ca",
+  "historical_verifier_sha256": "f88ff077deb5966236fac268d28cc39375a18040f426b2d6f427ded9afe3d935",
+  "portable_verifier_sha256": "679c747b19b75994019beb8d74ee4fe0beb2e9fe9fc6120d197fcf44c4dc035c",
+  "compiler_version": "Lean (version 4.28.0, x86_64-unknown-linux-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+  "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
+  "checker_sha256": "cb6cee24e93aa1d72ad0314906c51918f7c96947e18790a0273c837c25e79025",
+  "toolchain_tree_sha256": "e8433dd0e8c0a676f4cae4033f4280feb92ee75dc5dede320b98acd77d4efbf6",
+  "toolchain_tree_entries": 12872,
+  "compile": "passed, warnings treated as errors",
+  "fresh_kernel_replay": "passed, leanchecker --fresh",
+  "object_sha256": "9e49ba530cb32fb9c85b961ce369376de6c72c4c7655ae822ea973586b24882b",
+  "logs": {
+    "version": {
+      "stdout_sha256": "d0a890c9f6191aaab54a6b17cfd9db21210d8159871ba2229daef837b3dd46b4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "compile": {
+      "stdout_sha256": "3a4e5879bb3c7e9997325d60e1f1179db7e0455bdf71153cbc5b096e819b003c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fresh-check": {
+      "stdout_sha256": "7762c9b2b61f52f1dfb6f2248326826f36c9c0d0a6eacd16092949da7b91a7e0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "axioms_by_declaration": {
+    "EqualitySkeleton.Reason": [],
+    "EqualitySkeleton.W": [],
+    "EqualitySkeleton.Q": [],
+    "EqualitySkeleton.W_pos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Context": [],
+    "EqualitySkeleton.Context.fill": [],
+    "EqualitySkeleton.Context.coeff": [],
+    "EqualitySkeleton.Context.offset": [],
+    "EqualitySkeleton.Context.coeff_pos": [
+      "propext"
+    ],
+    "EqualitySkeleton.Context.weight_affine": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Context.weight_mono": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Context.weight_strict": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Context.weight_equal": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Context.secondary_strict": [
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Smaller": [],
+    "EqualitySkeleton.context_decreases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Root": [],
+    "EqualitySkeleton.root_decreases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Step": [],
+    "EqualitySkeleton.step_decreases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.rank": [],
+    "EqualitySkeleton.RankLT": [],
+    "EqualitySkeleton.rank_wellFounded": [],
+    "EqualitySkeleton.step_rank_decreases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.terminating": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.no_infinite_reduction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "EqualitySkeleton.Context.comp": [],
+    "EqualitySkeleton.Context.fill_comp": [
+      "propext"
+    ],
+    "EqualitySkeleton.Step.root": [],
+    "EqualitySkeleton.Step.context": [
+      "propext"
+    ],
+    "EqualitySkeleton.Steps": [],
+    "EqualitySkeleton.Normal": [],
+    "EqualitySkeleton.no_root_below_rho": [
+      "propext"
+    ],
+    "EqualitySkeleton.no_root_below_xi1_rho": [
+      "propext"
+    ],
+    "EqualitySkeleton.rho_normal": [
+      "propext"
+    ],
+    "EqualitySkeleton.xi1_rho_normal": [
+      "propext"
+    ],
+    "EqualitySkeleton.normal_steps_eq": [],
+    "EqualitySkeleton.peak": [],
+    "EqualitySkeleton.peak_to_rho": [],
+    "EqualitySkeleton.peak_to_xi1_rho": [],
+    "EqualitySkeleton.Confluent": [],
+    "EqualitySkeleton.not_confluent": [
+      "propext"
+    ]
+  },
+  "scope": "Exact raw 37-rule equality-reason skeleton, not the full typed labelled calculus.",
+  "note": "Local paths and environment are omitted; historical Windows verifier was not executed."
+}
