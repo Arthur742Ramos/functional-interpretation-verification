@@ -19,6 +19,22 @@ The structural word normaliser uses classical, noncomputable definitions. The or
 
 The later global-edge, explicit-reconstruction, typed computational core, named representation, structural alpha-equivalence, named substitution and binder-freshness packages described in the working manuscript are not included. Their complete source and evidence packages remain unavailable in the recovered material. No replay of those packages is claimed here.
 
+## Results and declarations
+
+The following map identifies entry points for the available formal results.
+The declarations use the syntax and hypotheses of their own modules; the
+map does not assert an unproved correspondence with the full book calculus.
+
+| Result described in the book | Source and declarations |
+| --- | --- |
+| Termination of the eight- and ten-rule structural relations | [`StructuralReasons.lean`](StructuralReasons.lean): `StructuralReasons.terminating` and `StructuralReasons.no_infinite_reduction`, with the `complete` parameter selecting the relation. |
+| Confluence and reachable normal forms for the ten-rule relation | [`StructuralConfluence.lean`](StructuralConfluence.lean): `StructuralReasons.ten_confluent` and `StructuralReasons.ten_exists_unique_normal`. |
+| Comparison of the structural congruences and words | [`ReasonCongruence.lean`](ReasonCongruence.lean): `StructuralReasons.ReasonCongruence.eight_iff_ten` and `StructuralReasons.ReasonCongruence.iff_typed_word_equiv`. |
+| Free-groupoid extension property | [`groupoid/FreeGroupoidUniversal.lean`](groupoid/FreeGroupoidUniversal.lean): `StructuralReasons.FreeGroupoid.reason_universal` and `StructuralReasons.FreeGroupoid.word_universal`. |
+| Boolean soundness of the selected formula systems | [`ImplicationSchemas.lean`](ImplicationSchemas.lean): `ImplicationSchemas.selected_sound`. |
+| Confluence and unique normal forms for raw products | [`ProductFragment.lean`](ProductFragment.lean): `ProductFragment.confluent` and `ProductFragment.exists_unique_normal`. |
+| Termination and nonconfluence of the raw equality skeleton | [`EqualitySkeleton.lean`](EqualitySkeleton.lean): `EqualitySkeleton.terminating` and `EqualitySkeleton.not_confluent`. |
+
 ## Requirements
 
 Use Python **3.11 or later** and Lean **4.28.0**. The Python scripts use only the standard library. Lean imports its bundled `Std.Tactic` and local modules; there are no external Lean package dependencies. Keep the complete Lean distribution, including its libraries and `leanchecker`, together. The scripts do not install a toolchain.
@@ -30,6 +46,7 @@ The bridge, congruence and groupoid procedures require the official Linux x86-64
 | Release archive, 520,948,633 bytes | `ceb3a3f844f7aebf63245e2b51c28d5b0ed38942c19f93cf3febd520302160bd` |
 | `bin/lean` | `3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf` |
 | `bin/leanchecker` | `cb6cee24e93aa1d72ad0314906c51918f7c96947e18790a0273c837c25e79025` |
+| Extracted distribution tree, using the method below | `e8433dd0e8c0a676f4cae4033f4280feb92ee75dc5dede320b98acd77d4efbf6` |
 
 The bridge verifier pins the compiler and records the checker's identity; the congruence and groupoid verifiers pin both. The original structural, implication, product and confluence scripts check the Lean version, with different recorded identity checks. These distinctions are preserved in this distribution.
 
@@ -46,9 +63,10 @@ python3 verify_confluence.py --lean "$LEAN" --output evidence/confluence
 python3 verify_bridge.py --lean "$LEAN" --output evidence/bridge
 python3 verify_congruence.py --lean "$LEAN" --output evidence/congruence
 python3 groupoid/verify_groupoid.py --lean "$LEAN" --output evidence/groupoid
+python3 verify_equality_skeleton_portable.py --lean "$LEAN" --output-dir evidence/equality-linux
 ```
 
-Each command compiles with warnings treated as errors, checks its named axiom reports and writes logs and a `verification-receipt.json`. The bridge, congruence and groupoid commands additionally invoke `leanchecker --fresh`, using Lean's own kernel in a fresh environment. This is not an independent kernel implementation. The earlier four commands in this block do not invoke that fresh checker. `lake build` alone builds only `StructuralReasons` and does not replace these checks.
+Each command compiles with warnings treated as errors, checks its named axiom reports and writes logs and a `verification-receipt.json`. The bridge, congruence, groupoid and separate equality-skeleton replay additionally invoke `leanchecker --fresh`, using Lean's own kernel in a fresh environment. This is not an independent kernel implementation. The earlier four commands in this block do not invoke that fresh checker. `lake build` alone builds only `StructuralReasons` and does not replace these checks.
 
 The disclosed axiom dependencies are subsets of `propext`, `Classical.choice` and `Quot.sound`, as recorded per declaration. Kernel acceptance checks the encoded presentation; correspondence with a calculus in the book requires mathematical review. Locally generated receipts contain local paths and environment information and are ignored by Git.
 
@@ -67,7 +85,41 @@ $env:LEAN = 'C:\path\to\matching\lean.exe'
 python verify_equality_skeleton.py --lean $env:LEAN --output-dir evidence/equality-windows
 ```
 
-The Lean source itself can be compiled separately on Linux. Such a check is a new platform-specific replay, not a successful run of the historical Windows verifier. Do not change the historical compiler pin and describe the resulting run as the original check.
+`verify_equality_skeleton_portable.py` supplies a separate fresh replay of the
+same source on the official Linux release pinned above. It checks the source,
+historical verifier, compiler, checker and complete distribution-tree hashes,
+compiles a fresh copy in a
+new output directory, compares the declaration dependency reports with the
+historical audit and runs `leanchecker --fresh`. Its receipt identifies this
+procedure separately and does not claim that the historical Windows verifier
+ran. The tree hash covers each regular file's relative name and SHA-256, and
+each symlink's relative name and target, sorted by name. For each entry it
+hashes `kind`, NUL, name, NUL, digest or target, and a newline; `kind` is `f`
+for a file and `l` for a symlink. The recorded value was compared with every
+entry of the release archive whose hash appears above.
+The checker must be beside the compiler; loader override variables are removed
+from their subprocess environment. System libraries outside the distribution
+are not covered. The script accepts
+explicit compiler, checker and tree hashes for another Lean 4.28.0
+distribution; those hashes and the release must be verified by the reader.
+The included pins and replay evidence are for Linux x86-64.
+
+To compare an extracted Linux distribution with the pinned release archive,
+install `unzstd` and run the separate archive check:
+
+```sh
+python3 verify_release_tree.py --archive /path/to/lean-4.28.0-linux.tar.zst \
+  --toolchain-root /path/to/lean-4.28.0-linux
+```
+
+The check verifies the archive hash before reading it and compares the names,
+file contents and symlink targets with the installed tree. It does not extract
+or modify the archive or toolchain.
+
+The [portable replay record](equality-portable-replay-evidence.json) records a
+Linux run of the new script, including the source, toolchain, object and log
+hashes and the declaration-level dependencies. The raw logs and local paths
+are not distributed with that record.
 
 ## Artifact identity and provenance
 
